@@ -1,0 +1,353 @@
+[
+    {
+        "amount": 10,
+        "balance": 2602.09,
+        "concept": "Fall Guys",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-06-27",
+        "date_formatted": "2022-Jun-27",
+        "type": "OUT"
+    },
+    {
+        "amount": 14,
+        "balance": 2588.09,
+        "concept": "Camiseta",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "OUT"
+    },
+    {
+        "amount": 26,
+        "balance": 2749.09,
+        "concept": "Mario Kart Expansion",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-11-30",
+        "date_formatted": "2022-Nov-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 50,
+        "balance": 3248,
+        "concept": "Regalo Abuelos",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-07-22",
+        "date_formatted": "2022-Jul-22",
+        "type": "IN"
+    },
+    {
+        "amount": 109,
+        "balance": 3139,
+        "concept": "Regalo Mama",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-07-29",
+        "date_formatted": "2022-Jul-29",
+        "type": "OUT"
+    },
+    {
+        "amount": 17,
+        "balance": 2571.09,
+        "concept": "Gorro",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "OUT"
+    },
+    {
+        "amount": 100,
+        "balance": 2708,
+        "concept": "Abuelos Orense",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-06-27",
+        "date_formatted": "2022-Jun-27",
+        "type": "IN"
+    },
+    {
+        "amount": 13,
+        "balance": 2558.09,
+        "concept": "Pelota futbol",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "OUT"
+    },
+    {
+        "amount": 55,
+        "balance": 2503.09,
+        "concept": "Porteria",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "OUT"
+    },
+    {
+        "amount": 250,
+        "balance": 2753.09,
+        "concept": "Regalo Comunion Maru",
+        "customer": "63f8ddb122b72dfa865639371",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 10,
+        "balance": 2698,
+        "concept": "Fall Guys",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-06-27",
+        "date_formatted": "2022-Jun-27",
+        "type": "OUT"
+    },
+    {
+        "amount": 200,
+        "balance": 2953.09,
+        "concept": "Regalo Comunion Rita",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 10,
+        "balance": 2963.09,
+        "concept": "Ir a casa Felix",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 88,
+        "balance": 2875.09,
+        "concept": "Regalo Mama",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-07-29",
+        "date_formatted": "2022-Jul-29",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 2855.09,
+        "concept": "Roblox",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-09-08",
+        "date_formatted": "2022-Sep-08",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 2835.09,
+        "concept": "Disfraz Alien",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-10-30",
+        "date_formatted": "2022-Oct-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 2815.09,
+        "concept": "Roblox",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-11-25",
+        "date_formatted": "2022-Nov-25",
+        "type": "OUT"
+    },
+    {
+        "amount": 40,
+        "balance": 2775.09,
+        "concept": "Mandos",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-11-25",
+        "date_formatted": "2022-Nov-25",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 2729.09,
+        "concept": "Fifa 2023",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2022-11-30",
+        "date_formatted": "2022-Nov-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 250,
+        "balance": 2948,
+        "concept": "Regalo Comunion Maru",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 200,
+        "balance": 3148,
+        "concept": "Regalo Comunion Rita",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 50,
+        "balance": 3198,
+        "concept": "Regalo Marta",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-07-20",
+        "date_formatted": "2022-Jul-20",
+        "type": "IN"
+    },
+    {
+        "amount": 54,
+        "balance": 3085,
+        "concept": "Pokemon Legends",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-08-25",
+        "date_formatted": "2022-Aug-25",
+        "type": "OUT"
+    },
+    {
+        "amount": 10,
+        "balance": 3095,
+        "concept": "Ratoncito Perez",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-08-25",
+        "date_formatted": "2022-Aug-25",
+        "type": "IN"
+    },
+    {
+        "amount": 6,
+        "balance": 3089,
+        "concept": "Putty",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-10-30",
+        "date_formatted": "2022-Oct-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 3069,
+        "concept": "Roblox",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-11-25",
+        "date_formatted": "2022-Nov-25",
+        "type": "OUT"
+    },
+    {
+        "amount": 31,
+        "balance": 3038,
+        "concept": "Mando",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-11-25",
+        "date_formatted": "2022-Nov-25",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 3018,
+        "concept": "Bear",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2022-11-30",
+        "date_formatted": "2022-Nov-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 100,
+        "balance": 2909.4,
+        "concept": "Abuelos Orense",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-06-27",
+        "date_formatted": "2022-Jun-27",
+        "type": "IN"
+    },
+    {
+        "amount": 10,
+        "balance": 2899.4,
+        "concept": "Camiseta Buddy",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "OUT"
+    },
+    {
+        "amount": 250,
+        "balance": 3149.4,
+        "concept": "Regalo Comunion Maru",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 200,
+        "balance": 3349.4,
+        "concept": "Regalo Comunion Rita",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-07-15",
+        "date_formatted": "2022-Jul-15",
+        "type": "IN"
+    },
+    {
+        "amount": 63,
+        "balance": 3286.4,
+        "concept": "Regalo Mama",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-07-29",
+        "date_formatted": "2022-Jul-29",
+        "type": "OUT"
+    },
+    {
+        "amount": 20,
+        "balance": 3266.4,
+        "concept": "Disfraz Tiburon",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-10-30",
+        "date_formatted": "2022-Oct-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 10,
+        "balance": 3256.4,
+        "concept": "Squishies",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2022-11-30",
+        "date_formatted": "2022-Nov-30",
+        "type": "OUT"
+    },
+    {
+        "amount": 35,
+        "balance": 2694.09,
+        "concept": "Regalo Cumple Samuel Axoloft",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2023-02-17",
+        "date_formatted": "2023-Feb-17",
+        "type": "OUT"
+    },
+    {
+        "amount": 29,
+        "balance": 2665.09,
+        "concept": "Regalo Cumple Maria Rock Hoodie",
+        "customer": "63f8ddb122b72dfa86563937",
+        "date": "2023-02-17",
+        "date_formatted": "2023-Feb-17",
+        "type": "OUT"
+    },
+    {
+        "amount": 35,
+        "balance": 2983,
+        "concept": "Regalo Cumple Maria Manface",
+        "customer": "63f8e06da440a0eda791fcc4",
+        "date": "2023-02-17",
+        "date_formatted": "2023-Feb-17",
+        "type": "OUT"
+    },
+    {
+        "amount": 38,
+        "balance": 3218.4,
+        "concept": "Regalo Cumple Samuel Oso",
+        "customer": "63f8e142f7cf54d19bd93eec",
+        "date": "2023-02-17",
+        "date_formatted": "2023-Feb-17",
+        "type": "OUT"
+    }
+]

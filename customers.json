@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "63f8ddb122b72dfa86563937"
+  },
+  "name": "Yago",
+  "balance": 2665.09,
+  "transactions": [
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed80"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7f"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed5e"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6e"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6c"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6d"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6b"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6a"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed69"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed5d"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed61"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed63"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed64"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed65"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed67"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed68"
+    },
+    {
+      "$oid": "63f8e06ea440a0eda791fcc7"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed5c"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63f8e06da440a0eda791fcc4"
+  },
+  "name": "Samuel",
+  "balance": 3039,
+  "transactions": [
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed81"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed77"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed75"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed76"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed74"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed72"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed73"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed60"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed5f"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed71"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed6f"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed70"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed62"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed66"
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "63f8e142f7cf54d19bd93eec"
+  },
+  "name": "Maria",
+  "balance": 3218.4,
+  "transactions": [
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed82"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7e"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7d"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7c"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed79"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7a"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed7b"
+    },
+    {
+      "$oid": "63f8e3ebde4cb7e830b4ed78"
+    }
+  ],
+  "__v": {
+    "$oid": "63fe243e4076a4db3fd877b4"
+  }
+}]

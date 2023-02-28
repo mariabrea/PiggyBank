@@ -1,0 +1,117 @@
+<%- include("partials/header"); -%>	
+        
+        <!-- Content -->
+        <div id="content">
+            <div class="form-container">
+                <div class="form">
+                    <div class="form-popup" id="myForm">
+                        <a href="#"  id="buttonTransaction" class="button transaction">MAKE TRANSACTION</a>
+    
+                        <form action="/customer/<%=current_id%>/<%=1%>" method="post">
+                            <label>Date</label>
+                            <input type="date" name="transactionDate">
+                            <br>
+                            <label>Amount</label>
+                            <input type="text" name="transactionAmount">
+                            <label>Concept</label>
+                            <input type="text" name="transactionConcept">
+                            <label>Type</label>
+                            <select name="transactionType">
+                                <option value="select">Chose...</option>
+                                <option value="IN">Money IN</option>
+                                <option value="OUT">Money OUT</option>
+                            </select>
+
+                            <div class="row form-buttons">
+                                <div class="col-6">
+                                    <input type="submit" id="button_submit" class="button submit_in" value="SUBMIT"></input>
+                                </div>
+                                <div class="col-6">
+                                    <input type="button" id="button_close" class="button close" onclick="closeForm()" value="CLOSE"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="inner">
+                <%  transactions.forEach(function(transaction){ %>
+                        <article class="box post post-excerpt">
+                            <header>
+                                <% if (transaction.type === 'IN'){ %>
+                                    <h2><i class="fa-sharp fa-solid fa-arrow-up"></i><%= transaction.amount %></h2>
+                                <% }else{ %>
+                                    <h2><i class="fa-sharp fa-solid fa-arrow-down"></i><%= transaction.amount %></h2>
+                                <% } %>
+                                <p><%= transaction.concept %></p>
+                            </header>
+                            <div class="info">
+                                <span class="date"><span class="month"><%= transaction.date.toLocaleDateString(undefined, { month: 'short'}) %></span> <span class="day"><%= transaction.date.toLocaleDateString(undefined, { day: 'numeric'}) %></span><span class="year"><%= transaction.date.toLocaleDateString(undefined, { year: 'numeric'}) %></span></span>
+                            </div>
+                            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                        </article>
+                <% }) %>
+
+                
+                <!-- Pagination -->
+                    <div class="pagination">
+                        <% if (current_page > 1){ 
+                            var previous_page = current_page-1 %>
+                            <a href="/customer/<%=current_id%>/<%=previous_page%>" class="button previous">Previous Page</a>
+                        <% } %>
+                        <div class="pages">
+                            <% for (var i=1; i<=pages; i++){ 
+                                if (i == current_page){ %>
+                                    <a href="/customer/<%=current_id%>/<%=i%>" class="active"><%= i %></a>
+                                <% }else if (i < pages){ %>
+                                    <a href="/customer/<%=current_id%>/<%=i%>"><%= i  %></a>
+                                <% } %>
+                            <% } %>
+                        </div>
+                        <% if (current_page < pages){ 
+                            var next_page = Number(current_page)+1 %>
+                            <a href="/customer/<%=current_id%>/<%=next_page%>" class="button next">Next Page</a>
+                        <% } %>
+                    </div>
+            </div>
+        </div>
+
+    <!-- Sidebar -->
+        <div id="sidebar">
+
+            <!-- Logo -->
+                <h1 id="logo"><a href="#">PIGGYBANK</a></h1>
+
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                    <%  customers.forEach(function(customer){ %>
+                        <% if (customer._id === current_id){ %>
+                            <li class="current"><a href="#"><%=customer.name%> - <%= customer.balance %></a></li>
+                        <% } else{ %>
+                            <li><a href="/customer/<%=customer._id%>/<%=1%>"><%= customer.name %> - <%= customer.balance %></a></li>
+                        <% } %>
+                    <% }) %>
+                    </ul>
+                </nav>
+
+            <!-- Button Make transaction -->
+            <div id="btnTransaction">
+                <a href="#"  id="btnTransaction" class="button transaction" onclick="openForm()">Transaction</a>
+            </div>
+
+			<!-- Button Graph -->
+            <div id="btnGraph">
+                <a href="/graph" class="button graph">Graph</a>
+            </div>
+
+            <!-- Copyright -->
+                <ul id="copyright">
+                    <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+
+        </div>
+
+
+<%- include("partials/footer"); -%>

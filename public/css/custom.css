@@ -1,0 +1,90 @@
+
+#myForm {
+    display: none;
+}
+
+.form-container {
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+.form {
+    width:70%;
+}
+
+#buttonTransaction {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.form-buttons {
+    padding: 0em 5em;
+}
+
+#button_submit {
+    background-color: #c94663;
+    border: none;
+}
+
+#button_submit:hover {
+    background-color: #ca5f77;
+}
+
+#button_close {
+    background-color: #364050;
+    border: none;
+}
+
+#button_close:hover {
+    background-color: #414853;
+}
+
+.fa-arrow-up {
+    margin-right: 2em;
+    color: #336600;
+}
+
+.fa-arrow-down {
+    margin-right: 2em;
+    color: #990033;
+}
+
+#myForm {
+    width: 100%;
+    border: gray;
+    border-color: gray;
+    border-style: solid;
+    padding: 1em 1em;
+}
+
+.form-buttons {
+    margin-top: 0em;
+    text-align: center;
+}
+
+div#graph-container {
+    width: 100%;
+    height: 50em;
+}
+
+a.button.graph {
+width: 100%;
+margin-top: 2em;
+}
+
+.chart{
+width:100%;
+height:400px;
+}
+
+.tooltip{
+padding: 1em 1em;
+border-style: solid;
+border-width:1px;
+border-color: "darkolivegreen";
+}
+
+#btnTransaction{
+    margin-top: 5em;
+    width: 100%;
+}

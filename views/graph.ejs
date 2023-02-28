@@ -1,0 +1,52 @@
+<%- include("partials/header"); -%>	
+
+		<!-- Content -->
+			<div id="content" data='<%=data%>'>
+				<div class="inner">
+					<%  customers.forEach(function(customer){ %>
+					<article class="box post post-excerpt">
+								<div id="chart-<%=customer.name%>" class="chart">
+									<svg id="svg-<%=customer.name%>"></svg>
+								</div>
+								<div class="info">
+									<span class="date"><%=customer.name%></span>
+								</div>
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+					</article>
+					<% }) %>
+				</div>
+            </div>
+		<!-- Sidebar -->
+        <div id="sidebar">
+
+            <!-- Logo -->
+                <h1 id="logo"><a href="#">PIGGYBANK</a></h1>
+
+            <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                    <%  customers.forEach(function(customer){ %>
+                        <% if (customer._id === current_id){ %>
+                            <li class="current"><a href="#"><%=customer.name%> - <%= customer.balance %></a></li>
+                        <% } else{ %>
+                            <li><a href="/customer/<%=customer._id%>/<%=1%>"><%= customer.name %> - <%= customer.balance %></a></li>
+                        <% } %>
+                    <% }) %>
+                    </ul>
+                </nav>
+
+			<!-- Button Graph -->
+            <!-- <div id="btnGraph">
+                <a href="/graph" class="button graph">Graph</a>
+            </div> -->
+
+            <!-- Copyright -->
+                <ul id="copyright">
+                    <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+
+        </div>
+
+		<script type="module" src="/js/graph.js"></script>
+		<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+<%- include("partials/footer"); -%>

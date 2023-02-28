@@ -1,0 +1,19 @@
+{
+  "name": "piggybank",
+  "version": "1.0.0",
+  "description": "Piggybank for money",
+  "main": "piggybank.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maria Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "d3": "^7.8.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "mongoose-paginate": "^5.0.3"
+  }
+}
