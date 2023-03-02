@@ -1,6 +1,7 @@
 //jshint esversion:6
 // import mongoose from 'mongoose';
 
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -12,8 +13,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 const mongoose = require('mongoose');
-// mongoose.connect('mongodb://127.0.0.1:27017/piggybankDB');
-mongoose.connect('mongodb+srv://admin-Maria:vVylhihjBZDK2mVe@cluster0.fjvwk.mongodb.net/piggybankDB');
+const mongoAtlasKey = process.env.MONGOATLASKEY;
+mongoose.connect(`mongodb+srv://admin-Maria:${mongoAtlasKey}@cluster0.fjvwk.mongodb.net/piggybankDB`);
 
 const { Schema } = mongoose;
 
@@ -68,7 +69,8 @@ app.get("/customer/:customerId/:page", function(req, res){
     console.log(requestedCustomerId);
     Customer.find({}, function(err, customers){
         console.log(customers);
-
+        console.log("currentId");
+        console.log(requestedCustomerId);
         Transaction.paginate({customer: requestedCustomerId}, {sort: { date: -1, _id: "asc" }, page: page, limit: 5}, function(err, transactions){
             res.render("index", {
                 customers: customers,
@@ -98,7 +100,12 @@ app.post("/customer/:customerId/:page", function(req, res){
     console.log(transactionType);
     Customer.findOne({_id: customerId}, function(err, customer){
         console.log(customer);
-        var new_balance = customer.balance + Number(req.body.transactionAmount);
+        if (req.body.transactionType === "IN"){
+            var new_balance = customer.balance + Number(req.body.transactionAmount);
+        } else {
+            var new_balance = customer.balance - Number(req.body.transactionAmount);
+        }
+        
         const transaction = new Transaction({
             amount: req.body.transactionAmount,
             date: req.body.transactionDate,

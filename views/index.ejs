@@ -87,7 +87,7 @@
                 <nav id="nav">
                     <ul>
                     <%  customers.forEach(function(customer){ %>
-                        <% if (customer._id === current_id){ %>
+                        <% if (customer._id == current_id){ %>
                             <li class="current"><a href="#"><%=customer.name%> - <%= customer.balance %></a></li>
                         <% } else{ %>
                             <li><a href="/customer/<%=customer._id%>/<%=1%>"><%= customer.name %> - <%= customer.balance %></a></li>
