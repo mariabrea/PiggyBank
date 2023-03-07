@@ -13,8 +13,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 const mongoose = require('mongoose');
-const mongoAtlasKey = process.env.MONGOATLASKEY;
-mongoose.connect(`mongodb+srv://admin-Maria:${mongoAtlasKey}@cluster0.fjvwk.mongodb.net/piggybankDB`);
+// const mongoAtlasKey = process.env.MONGOATLASKEY;
+// mongoose.connect(`mongodb+srv://admin-Maria:${mongoAtlasKey}@cluster0.fjvwk.mongodb.net/piggybankDB`);
+mongoose.connect(process.env.MONGODB_URI);
 
 const { Schema } = mongoose;
 
