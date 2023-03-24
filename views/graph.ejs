@@ -2,6 +2,10 @@
 
 		<!-- Content -->
 			<div id="content" data='<%=data%>'>
+                <div class="user-info d-flex flex-row-reverse">
+                    <a class="btn btn-primary btn-lg" href="/logout" role="button">Log Out</a>
+                    <p><%=username%></p>
+                </div>
 				<div class="inner">
 					<%  customers.forEach(function(customer){ %>
 					<article class="box post post-excerpt">

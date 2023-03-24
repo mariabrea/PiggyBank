@@ -1,5 +1,11 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700");
 
-#myForm {
+#formTransaction {
+    display: none;
+}
+
+#formCustomer {
     display: none;
 }
 
@@ -31,12 +37,12 @@
 }
 
 #button_close {
-    background-color: #364050;
+    background-color: #c94663;
     border: none;
 }
 
 #button_close:hover {
-    background-color: #414853;
+    background-color: #ca5f77;
 }
 
 .fa-arrow-up {
@@ -82,9 +88,60 @@ padding: 1em 1em;
 border-style: solid;
 border-width:1px;
 border-color: "darkolivegreen";
+opacity: 1;
+}
+
+#btnCustomer{
+    margin-top: 5em;
+    width: 100%;
 }
 
 #btnTransaction{
-    margin-top: 5em;
+    margin-top: 1em;
     width: 100%;
+}
+
+#home-container{
+    text-align: center;
+    margin: auto;
+    margin-top: 10em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+#home-container h1{
+	color: #c94663;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #c94663 !important;
+    font-weight: 600 !important;
+    font-size: 1em;
+}
+
+.login-register-title{
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+	color: #c94663;
+    margin-bottom: 1em;
+}
+
+.user-info{
+    text-align: right;
+	color: #c94663;
+    font-weight: 600;
+}
+
+.user-info p{
+    margin-right: 1em;
+}
+
+.customer-li{
+    display: inline-flex;
+}
+
+.btn-trash{
+    font-size: 0.7em;
 }
