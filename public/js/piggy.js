@@ -1,11 +1,25 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-	document.getElementById("buttonTransaction").disabled = True;
+function openForm(formId, buttonId) {
+    document.getElementById(formId).style.display = "block";
+	document.getElementById(buttonId).disabled = true;
 };
 
-function closeForm() {
-	document.getElementById("myForm").style.display = "none";
-	document.getElementById("buttonTransaction").disabled = False;
+function closeForm(formId, buttonId) {
+	document.getElementById(formId).style.display = "none";
+	document.getElementById(buttonId).disabled = false;
 };
+
+function eraseError() {
+	document.getElementById("email-label").innerText = "Email";
+};
+
+function confirmDeleteCustomer(customer) {
+	var txt;
+	if (confirm("Are you sure you want to delete " + customer + "?")) {
+	//   txt = "You pressed OK!";
+	} else {
+	//   txt = "You pressed Cancel!";
+	}
+	document.getElementById("demo").innerHTML = txt;
+  }
 
 

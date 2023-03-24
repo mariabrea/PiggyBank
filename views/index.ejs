@@ -2,12 +2,35 @@
         
         <!-- Content -->
         <div id="content">
+            <div class="user-info d-flex flex-row-reverse">
+                <a class="btn btn-primary btn-lg" href="/logout" role="button">Log Out</a>
+                <p><%=username%></p>
+            </div>
             <div class="form-container">
                 <div class="form">
-                    <div class="form-popup" id="myForm">
-                        <a href="#"  id="buttonTransaction" class="button transaction">MAKE TRANSACTION</a>
+                    <div class="form-popup" id="formCustomer">
     
-                        <form action="/customer/<%=current_id%>/<%=1%>" method="post">
+                        <form action="/customer/<%=current_id%>/<%=1%>?action=createCustomer" method="post">
+                            <label>Name</label>
+                            <input type="text" name="customerName">
+                            <label>Balance</label>
+                            <input type="text" name="customerBalance">
+
+                            <div class="row form-buttons">
+                                <div class="col-6">
+                                    <input type="submit" id="button_submit" class="button submit_in" value="Create"></input>
+                                </div>
+                                <div class="col-6">
+                                    <input type="button" id="button_close" class="button" onclick="closeForm('formCustomer', 'btnCustomer')" value="Close"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-popup" id="formTransaction">
+                        <!-- <a href="#"  id="buttonTransaction" class="button transaction">MAKE TRANSACTION</a> -->
+    
+                        <form action="/customer/<%=current_id%>/<%=1%>?action=createTransaction" method="post">
                             <label>Date</label>
                             <input type="date" name="transactionDate">
                             <br>
@@ -24,10 +47,10 @@
 
                             <div class="row form-buttons">
                                 <div class="col-6">
-                                    <input type="submit" id="button_submit" class="button submit_in" value="SUBMIT"></input>
+                                    <input type="submit" id="button_submit" class="button submit_in" value="Submit"></input>
                                 </div>
                                 <div class="col-6">
-                                    <input type="button" id="button_close" class="button close" onclick="closeForm()" value="CLOSE"></input>
+                                    <input type="button" id="button_close" class="button" onclick="closeForm('formTransaction', 'btnTransaction')" value="Close"></input>
                                 </div>
                             </div>
                         </form>
@@ -49,7 +72,7 @@
                             <div class="info">
                                 <span class="date"><span class="month"><%= transaction.date.toLocaleDateString(undefined, { month: 'short'}) %></span> <span class="day"><%= transaction.date.toLocaleDateString(undefined, { day: 'numeric'}) %></span><span class="year"><%= transaction.date.toLocaleDateString(undefined, { year: 'numeric'}) %></span></span>
                             </div>
-                            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                            <hr>
                         </article>
                 <% }) %>
 
@@ -88,19 +111,42 @@
                     <ul>
                     <%  customers.forEach(function(customer){ %>
                         <% if (customer._id == current_id){ %>
-                            <li class="current"><a href="#"><%=customer.name%> - <%= customer.balance %></a></li>
+                            <li class="customer-li current">
+                                <form action="/customer/<%=customer._id%>/<%=1%>?action=deleteCustomer" method="post" onsubmit="return confirm('Are you sure you want to delete <%=customer.name%>?');">
+                                    <!-- <input type="submit" id="button_delete" class="button submit_in" name="customerToDelete" value=<%=customer._id%>>Del</input> -->
+                                    <button class="btn-trash" type="submit" name="customerToDelete" value=<%=customer._id%>>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </form>
+                                <a href="#"><%=customer.name%> - <%= customer.balance %></a>
+                            </li>
                         <% } else{ %>
-                            <li><a href="/customer/<%=customer._id%>/<%=1%>"><%= customer.name %> - <%= customer.balance %></a></li>
+                            <li class="customer-li">
+                                <form action="/customer/<%=customer._id%>/<%=1%>?action=deleteCustomer" method="post" onsubmit="return confirm('Are you sure you want to delete <%=customer.name%>?');">
+                                    <button class="btn-trash" type="submit" name="customerToDelete" value=<%=customer._id%>>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                        <!-- <input type="submit" id="button_delete" class="button submit_in" name="customerToDelete" value=<%=customer._id%>>Del</input> -->
+                                </form>
+                                <a href="/customer/<%=customer._id%>/<%=1%>"><%= customer.name %> - <%= customer.balance %>
+                                </a>
+                            </li>
                         <% } %>
                     <% }) %>
                     </ul>
                 </nav>
 
-            <!-- Button Make transaction -->
-            <div id="btnTransaction">
-                <a href="#"  id="btnTransaction" class="button transaction" onclick="openForm()">Transaction</a>
+            <!-- Button Create Customer -->
+            <div id="btnCustomer">
+                <a href="#"  id="btnTransaction" class="button transaction" onclick="openForm('formCustomer', 'btnCustomer')">New Customer</a>
             </div>
-
+            
+            <!-- Button Make transaction -->
+            <% if (current_id != 0){ %>
+            <div id="btnTransaction">
+                <a href="#"  id="btnTransaction" class="button transaction" onclick="openForm('formTransaction', 'btnTransaction')">Transaction</a>
+            </div>
+            <% } %>
 			<!-- Button Graph -->
             <div id="btnGraph">
                 <a href="/graph" class="button graph">Graph</a>
