@@ -87,7 +87,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/customers"
+    callbackURL: "https://piggybank-0amr.onrender.com/auth/google/customers"
   },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile);
